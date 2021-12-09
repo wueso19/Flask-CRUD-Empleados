@@ -1,0 +1,38 @@
+<div class="modal fade" id="update" tabindex="-1" aria-labelledby="updateLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Actualizar Empleado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form action="#" method="POST" enctype="multipart/form-data" id="updateForm">
+                      <div class="mb-3">
+                          <label for="txtNombre" class="form-label">Nombre</label>
+                          <input type="text" id="txtNombre" name="txtNombre" placeholder="Nombre" class="form-control" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="txtCorreo" class="form-label">Dirección de Correo</label>
+                          <div class="input-group">
+                              <span class="input-group-text" id="basic-addon1">@</span>
+                              <input type="email" id="txtCorreo" name="txtCorreo" placeholder="tu@correo.com" class="form-control" required>
+                          </div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="txtFoto" class="form-label">Sleccionar Imagen</label>
+                          <div>
+                              <img id="updateFoto" class="img-thumbnail" width="100" src="#" alt="#">
+                          </div>
+                          <input type="file" name="txtFoto" id="txtFoto" class="form-control" required>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">
+                            Guardar
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>              
+                  </form>
+              </div>
+        </div> 
+    </div>
+</div>
